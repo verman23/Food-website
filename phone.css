@@ -1,0 +1,52 @@
+/* Navigation section */
+#navbar{
+    flex-direction: column;
+}
+
+
+/* Home section */
+#home{
+height: 370px;
+}
+#home::before{
+    height: 480px;
+    }
+#home p{
+    font-size: 30px;
+
+}
+        
+/* Services section */
+
+#services{
+    flex-direction: column;
+
+}
+
+#services .box{ 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+ 
+}
+
+
+/* Client selection */
+#client{
+    overflow: hidden;
+}
+
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+
+
+
+/* contact section */
+#contact-box form{
+    width:80%;
+}
+
+/* utility classes */

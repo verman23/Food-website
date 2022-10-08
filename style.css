@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* css Variables */
+:root{
+  --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+  display: flex;
+  align-items: center ;
+  position: absolute;
+  top: 0px;
+}
+
+/*navigation bar logo and image */
+#logo{
+margin:3px 4px;
+}
+#logo img{
+  height: 106px;
+  margin: 2px 34px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ::before{
+   content: "" ;
+    background-color:none ;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.4;
+  
+}
+#navbar ul li{
+
+list-style: none;
+font-size: 3.3rem;
+}
+
+#navbar ul li a {
+  color: black;
+display:block;
+padding: 3px 22px;
+border-radius:  20px;
+text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: green;
+}
+ /* Home section */
+ #home
+ {
+   display: flex;
+   flex-direction: column;
+   padding:137px 174px;
+   justify-content: center;
+   align-items: center;
+   
+ }
+
+ #home::before{ 
+  content: "";
+  position: absolute;
+  background: url('./back1.jpg') no-repeat center center/cover;
+  height: 500px;
+  top:0px;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+  opacity:0.89;
+}
+#home h1{
+  color: black;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+ 
+#home  p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+}
+
+/* services section */
+#services {
+  margin: 23px 57px;
+  display: flex;
+}
+#services  .box {
+  border: 2px solid red;
+  padding: 40px;
+  margin: 25px 6px;
+  border-radius: 28px;
+  background: azure;
+  margin-bottom: 20px;
+
+
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+  
+}
+/* Client section */
+#client-section{
+  height: 344px;
+}
+
+#client-section::before{
+content: ""; 
+position:absolute;
+background: url('./back3.jpg') no-repeat center center/cover;
+width: 100%;
+height: 333px;
+z-index: -1;
+opacity: 0.89;
+  
+}
+#client{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.client-item{
+  padding: 34px;
+}
+
+#client img{
+ height: 168px;
+}
+/* contact section */
+#contact{
+  position:relative;
+
+}
+
+#contact::before{
+  content: ""; 
+  position:absolute;
+ 
+  width: 100%;
+  height: 333px;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('/image1.jpg') no-repeat center center/cover;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;}
+#contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+ font-size: 1.3rem;
+}
+/* FOOTER -SECTION */
+footer{
+  background: lightcoral;
+  color: black;
+  padding: 9px 20px;
+  justify-content: center;
+  align-items: center;
+}
+/* utility classes */
+.h-primary{
+  font-family: 'Bree Serif', serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-secondary{
+  font-family: 'Bree Serif', serif;
+  font-size: 2.96rem;
+  padding: 12px;
+}
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
